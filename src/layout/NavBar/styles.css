@@ -1,8 +1,53 @@
 @import "../../styles/base/settings.css";
 
 .navbar {
-    padding: 0 10px;
+    height:var(--navbar-height);
+    background-color: var(--app-items-color);
+    color: var(--app-font-color);
+    padding: 0 30px;
     position: fixed;
     box-shadow: 0 0 6px 1px #1f1e1e3b;
-    background-color: var(--app-bg-color);
+}
+
+.navbar__container {
+    max-width: 100%;
+}
+.navbar__title {
+    font-size: 20px;
+}
+
+.navbar__darkmode-togle {
+    -webkit-user-select: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.navbar__icon-moon {
+    transform: rotate(-13deg);
+    margin-right: 7px;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .navbar__title {
+        font-size: 15px;
+    }
+    
+    .navbar__darkmode-togle {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .navbar__title {
+        font-size: 12px;
+    }
+    
+    .navbar__darkmode-togle {
+        font-size: 10px;
+    }
 }
