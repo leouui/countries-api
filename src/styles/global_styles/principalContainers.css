@@ -1,0 +1,7 @@
+@import "../base/settings.css";
+
+.content__principal {
+    background-color: var(--app-bg-color);
+    padding-top: var(--navbar-height);
+    min-height: 100vh; 
+}
