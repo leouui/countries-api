@@ -1,9 +1,13 @@
+import { useContext } from "react"
+import { FilterBar } from "../component"
+import { CountryContext } from "../stateManagement/context/context"
+
 const Home = () => {
-    return (
-        <div>
-            <h1>Home</h1>
-        </div>
-    )
+    const {state,dispatch} = useContext(CountryContext)
+
+    return <>
+        <FilterBar/>
+    </>
 }
 
 export default Home
