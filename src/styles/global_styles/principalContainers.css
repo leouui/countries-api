@@ -2,6 +2,11 @@
 
 .content__principal {
     background-color: var(--app-bg-color);
+    color: var(--app-font-color);
     padding-top: var(--navbar-height);
-    min-height: 100vh; 
+    min-height: 100vh;
+}
+
+.content__pages-container {
+    padding: 30px 0;
 }
