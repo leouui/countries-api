@@ -1,0 +1,8 @@
+@import "../../styles/base/settings.css";
+
+.navbar {
+    padding: 0 10px;
+    position: fixed;
+    box-shadow: 0 0 6px 1px #1f1e1e3b;
+    background-color: var(--app-bg-color);
+}
