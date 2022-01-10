@@ -2,9 +2,7 @@ import { AppRouter } from "./routes/AppRouter"
 import "./styles/index.css"
 
 const App = () => {
-  return <div>
-    <AppRouter/>
-  </div>
+  return <AppRouter/>
 }
 
 export default App
