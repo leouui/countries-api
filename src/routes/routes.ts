@@ -1,4 +1,4 @@
-import { Home,CountryDetails } from "../views"
+import {DashRoutes} from "./routes/index"
 
 interface routesInterface {
     path:string,
@@ -8,13 +8,8 @@ interface routesInterface {
 
 export const routes : routesInterface[] = [
     {
-        path:"/",
+        path:"/*",
         to:"/",
-        Component:Home
-    },
-    {
-        path:":countryId",
-        to:"/",
-        Component:CountryDetails
-    },
+        Component:DashRoutes
+    }
 ]
