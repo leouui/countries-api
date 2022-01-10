@@ -3,6 +3,7 @@
 :root {
     --app-font-family:'Nunito Sans', sans-serif;
     --navbar-height:65px;
+    --containers-padding-left-right: 30px;
 }
 
 [data-theme="ligth"] {
@@ -15,4 +16,11 @@
     --app-bg-color:#202c37;
     --app-items-color:#2b3945;
     --app-font-color:#ffffff;
+}
+
+
+@media screen and (max-width: 400px) {
+    :root {
+        --containers-padding-left-right: 15px;
+    }
 }

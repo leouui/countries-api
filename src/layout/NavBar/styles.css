@@ -2,10 +2,11 @@
 
 .navbar {
     top: 0;
+    left: 0;
     height:var(--navbar-height);
     background-color: var(--app-items-color);
     color: var(--app-font-color);
-    padding: 0 30px;
+    padding: 0 var(--containers-padding-left-right);
     position: fixed;
     box-shadow: 0 0 6px 1px #1f1e1e3b;
 }
@@ -30,10 +31,6 @@
 }
 
 @media screen and (max-width: 400px) {
-    .navbar {
-        padding: 0 15px;
-    }
-
     .navbar__title {
         font-size: 15px;
     }

@@ -3,7 +3,7 @@
 .content__principal {
     background-color: var(--app-bg-color);
     color: var(--app-font-color);
-    padding-top: var(--navbar-height);
+    padding: var(--navbar-height) var(--containers-padding-left-right);
     min-height: 100vh;
 }
 
