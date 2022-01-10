@@ -1,7 +1,7 @@
 const FilterBar = () => {
     return (
         <div>
-            lmao
+            xd
         </div>
     )
 }

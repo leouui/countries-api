@@ -1,6 +1,6 @@
 import { useContext } from "react"
-import { FilterBar } from "../component"
 import { CountryContext } from "../stateManagement/context/context"
+import { FilterBar } from "../components"
 
 const Home = () => {
     const {state,dispatch} = useContext(CountryContext)

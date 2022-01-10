@@ -5,7 +5,7 @@ import "./styles.css"
 // true === "dark"
 
 const NavBar = () => {
-    const [theme,setTheme] = useState(JSON.parse(localStorage.getItem("dark-theme")))
+    const [theme,setTheme] = useState(JSON.parse(localStorage.getItem("dark-theme") || ''))
 
     useEffect(()=>{
         if(theme) document.body.setAttribute("data-theme","dark") 
@@ -17,7 +17,7 @@ const NavBar = () => {
         <div className="navbar__container w-page h-100 d-flex fx-between fy-center">
             <h1 className="navbar__title">Where in the world?</h1>
 
-            <div className="navbar__darkmode-togle" onClick={() => setTheme(theme => !theme)}>
+            <div className="navbar__darkmode-togle" onClick={() => setTheme((theme:Boolean) => !theme)}>
                 <i className={`navbar__icon-moon ${!theme ?"far fa-moon":"fas fa-moon"}`}></i>Dark Mode 
             </div>
         </div>
