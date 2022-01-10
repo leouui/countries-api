@@ -1,10 +1,10 @@
-import {initState} from "../reducers/initialState"
+import {countryInitState} from "../reducers/initialState"
 
 type Actions = 
     | { type:"setCountryData", payload:Object[] }
     | { type:"setLoading", payload:Boolean }
 
-export const countryReducer = (state:initState,action:Actions) : initState => {
+export const countryReducer = (state:countryInitState,action:Actions) : countryInitState => {
     switch (action.type) {
         case "setCountryData":
             return {
