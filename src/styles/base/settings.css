@@ -2,14 +2,17 @@
 
 :root {
     --app-font-family:'Nunito Sans', sans-serif;
+    --navbar-height:65px;
 }
 
-:root[data-theme="dark"] {
-    --app-bg-color:#202c37;
-    --app-font-color:#ffffff;
-}
-
-:root[data-theme="ligth"] {
+[data-theme="ligth"] {
     --app-bg-color:#fafafa;
+    --app-items-color:#ffffff;
     --app-font-color:#111517;
+}
+
+[data-theme="dark"] {
+    --app-bg-color:#202c37;
+    --app-items-color:#2b3945;
+    --app-font-color:#ffffff;
 }
