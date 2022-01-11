@@ -1,0 +1,69 @@
+@import "../../styles/base/settings.css";
+
+:root {
+    --padding-left-search-icon:70px;
+    --height-filter-items:50px;
+}
+
+.filter-select__select , .form__item--form-search,.filter-select-icon {
+    background-color: var(--app-items-color);
+    color: var(--app-p-input-font-color);
+}
+
+.filter-select__select , .form__item--form-search {
+    border-radius: 4px;
+    box-shadow: 0 0 6px 1px #1f1e1e25;
+    height: var(--height-filter-items);
+}
+
+.form--search {
+    width: 450px;
+    max-width: 100%;
+}
+
+.form--search .form__item{
+    font-size: 14px;
+}
+
+.form__item {
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.form__item--form-search {
+    padding: 15px 15px 15px var(--padding-left-search-icon);
+}
+
+.form__item--form-search::placeholder { 
+    color: var(--app-p-input-font-color);
+}
+
+.icon-search {
+    width: var(--padding-left-search-icon);
+    height: 100%;
+    font-size: 15px;
+    color: var(--app-p-input-font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.filter-select__select {
+    height: var(--height-filter-items);
+    overflow: hidden;
+    padding: 0 50px 0 15px;
+}
+
+.filter-select-icon {
+    width: 50px;
+    height: 100%;
+    border-radius: 4px;
+    right: 0;
+    pointer-events: none;
+}
+
+.filter-select__item--not-visible {
+    display: none;
+}
