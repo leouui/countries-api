@@ -8,6 +8,7 @@
 
 [data-theme="ligth"] {
     --app-bg-color:#fafafa;
+    --box-shadow-1: 0 0 6px 1px #1f1e1e25;
     --app-items-color:#ffffff;
     --app-font-color:#111517;
     --app-p-input-font-color:#858585;
@@ -15,6 +16,7 @@
 
 [data-theme="dark"] {
     --app-bg-color:#202c37;
+    --box-shadow-1: 0 0 6px 1px #1f1e1e5d;
     --app-items-color:#2b3945;
     --app-font-color:#ffffff;
     --app-p-input-font-color:#ffffff;

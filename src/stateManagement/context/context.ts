@@ -1,13 +1,9 @@
 import { createContext } from "react";
-import { countryInitState } from "../reducers/initialState";
-
-type Actions = 
-    | { type:"setCountryData", payload:Object[] }
-    | { type:"setLoading", payload:Boolean }
+import { countryInitState } from "../../interfaces/interfaces";
 
 interface countryContext {
     state:countryInitState,
-    dispatch:React.Dispatch<Actions>
+    dispatch:React.Dispatch<any>
 }
 
 export const CountryContext = createContext<countryContext>({} as countryContext)

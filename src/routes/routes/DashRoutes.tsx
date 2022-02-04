@@ -1,5 +1,5 @@
-import { NavBar } from "../../layout"
-import { CountryContent } from "../../components"
+import {NavBar} from "../../layout"
+import {CountryContent} from "../../components"
 
 const DashRoutes = () => {
     return <div className="content__principal">

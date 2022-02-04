@@ -5,6 +5,11 @@
     --height-filter-items:50px;
 }
 
+.filter-bar {
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
 .filter-select__select , .form__item--form-search,.filter-select-icon {
     background-color: var(--app-items-color);
     color: var(--app-p-input-font-color);
@@ -12,17 +17,17 @@
 
 .filter-select__select , .form__item--form-search {
     border-radius: 4px;
-    box-shadow: 0 0 6px 1px #1f1e1e25;
+    box-shadow: var(--box-shadow-1);
     height: var(--height-filter-items);
 }
 
 .form--search {
-    width: 450px;
+    width: 400px;
     max-width: 100%;
 }
 
 .form--search .form__item{
-    font-size: 14px;
+    font-size: 13.3333px;
 }
 
 .form__item {

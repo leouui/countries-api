@@ -1,0 +1,39 @@
+@import "../../styles/base/settings.css";
+
+.countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap:80px;
+}
+
+.countries__item {
+    width: 100%;
+    border-radius: 4px;
+    background-color: var(--app-items-color);
+    box-shadow: var(--box-shadow-1);
+}
+.countries__item img{
+    width: 100%;
+    height: 175px;
+    object-fit:cover;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.countries__item-name {
+    font-size: 15px;
+}
+.countries__info-container {
+    margin: 15px 0;
+}
+.countries__info-item {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.countries__title-info{
+    font-weight: 600;
+}
+
+.countries__content-info {
+    padding: 20px;
+}
