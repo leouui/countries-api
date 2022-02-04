@@ -1,2 +1,2 @@
-export {default as Home} from "./Home"
-export {default as CountryDetails} from "./CountryDetails"
+export {Home} from "./Home"
+export {CountryDetails} from "./CountryDetails"

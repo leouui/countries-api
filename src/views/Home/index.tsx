@@ -1,9 +1,9 @@
 import { useLayoutEffect } from "react"
-import { useCountriesContext } from "../hooks"
-import { CountriesList, FilterBar } from "../components"
-import {startGetAllCountries} from "../stateManagement/actions"
+import { useCountriesContext } from "../../hooks"
+import { CountriesList, FilterBar } from "./components"
+import {startGetAllCountries} from "../../stateManagement/actions"
 
-const Home = () => {
+export const Home = () => {
     const {state,dispatch} = useCountriesContext()
     const {loading,filter_data,error} = state.country
     
@@ -22,5 +22,3 @@ const Home = () => {
         }
     </>
 }
-
-export default Home

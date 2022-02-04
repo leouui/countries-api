@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 import "./styles.css"
 
 // false === "ligth"
@@ -12,10 +13,12 @@ const NavBar = () => {
         else document.body.setAttribute("data-theme","ligth")
         localStorage.setItem("dark-theme",theme)
     },[theme])
-
+    
     return <nav className="navbar w-100">
         <div className="navbar__container w-page h-100 d-flex fx-between fy-center">
-            <h1 className="navbar__title">Where in the world?</h1>
+            <Link to="/">
+                <h1 className="navbar__title">Where in the world?</h1>
+            </Link>
 
             <div className="navbar__darkmode-togle" onClick={() => setTheme((theme:Boolean) => !theme)}>
                 <i className={`navbar__icon-moon ${!theme ?"far fa-moon":"fas fa-moon"}`}></i>Dark Mode 

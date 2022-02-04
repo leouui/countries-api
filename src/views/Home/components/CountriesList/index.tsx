@@ -1,5 +1,5 @@
 import { CountryCard } from "./CountryItem"
-import {countryItemInterface} from "../../interfaces/interfaces"
+import {countryItemInterface} from "../../../../interfaces/interfaces"
 import "./styles.css"
 
 const CountriesList = ({data} : {data:countryItemInterface[]}) => {

@@ -1,11 +1,11 @@
-import { useCountriesContext, useForm } from "../../../hooks"
-import { startGetCountriesByName } from "../../../stateManagement/actions"
+import {useCountriesContext,useForm} from "../../../../../hooks"
+import {startGetCountriesByName} from "../../../../../stateManagement/actions"
 
 const SearchForm = () => {
     const {dispatch} = useCountriesContext()
     const {formValues,onChange,onSubmitEvt} = useForm({
         initialValues:{search: ""},
-        handleSubmit:(values) => startGetCountriesByName(values.search,dispatch)
+        handleSubmit:(values) => startGetCountriesByName(values.search.trim().toLowerCase(),dispatch)
     })
 
     return <form className="form form--search" onSubmit={onSubmitEvt}>

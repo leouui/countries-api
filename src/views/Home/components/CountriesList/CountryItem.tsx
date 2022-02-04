@@ -1,10 +1,10 @@
 import { memo} from "react"
 import { Link } from "react-router-dom"
-import {countryItemInterface} from "../../interfaces/interfaces"
+import {countryItemInterface} from "../../../../interfaces/interfaces"
 import "./styles.css"
 
 export const CountryCard = memo(({name:{common:name},population,region,capital,flags:{png}} : countryItemInterface) => {
-    return <Link className="countries__item animate__animated animate__fadeIn" to={`/${name}`}>
+    return <Link className="countries__item animate__animated animate__fadeIn" to={`/${name.toLowerCase()}`}>
         <img src={png} alt={name} />
         
         <div className="countries__content-info">

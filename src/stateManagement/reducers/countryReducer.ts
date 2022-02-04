@@ -22,7 +22,7 @@ export const countryReducer = (state:countryInitState,action:countryActions) : c
                 }
             }
         case "getCountriesByName":
-            const filter = state.country.data.filter(c => c.name.common.toLowerCase().includes(action.payload.toLowerCase()))
+            const filter = state.country.data.filter(c => c.name.common.toLowerCase().includes(action.payload))
 
             return {
                 ...state,

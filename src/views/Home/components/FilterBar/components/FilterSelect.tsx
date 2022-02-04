@@ -1,6 +1,6 @@
 import { useEffect } from "react"
-import { useCountriesContext, useForm } from "../../../hooks"
-import { startGetCountriesByRegion } from "../../../stateManagement/actions"
+import { useCountriesContext, useForm } from "../../../../../hooks"
+import { startGetCountriesByRegion } from "../../../../../stateManagement/actions"
 
 const data = [
     {name:"africa",jsxName:"Africa"},
